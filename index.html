@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./images/profile2.svg" type="image/x-icon">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="try.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+
+        <!--
+      - #SIDEBAR
+    -->
+
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img src="./images/my-avatar2.png" alt="Adewumi Tomiwa" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Richard hanrick">Adewumi Tomiwa</h1>
+
+                    <p class="title">Software Engineer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contact</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:tomiwa.m.adewumi@gmail.com"
+                                class="contact-link">tomiwa.m.adewumi@gmail.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+12133522795" class="contact-link">+1 (902) 916-6012</a>
+                        </div>
+
+                    </li>
+
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>PEI, CANADA</address>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+
+                    <li class="social-item">
+                        <a href="https://github.com/Tomiwa-Adewumi" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/tomiwa-adewumi/" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+
+
+
+        <!--
+      - #main-content
+    -->
+
+        <div class="main-content">
+
+            <!--
+        - #NAVBAR
+      -->
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+
+
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+
+
+
+            <!--
+        - #ABOUT
+      -->
+
+            <article class="about  active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        My name is Tomiwa Adewumi. I am currently a 3rd-year Computer science student at the University
+                        of Prince Edward Island. My love for technology is driven by discovering new things and learning
+                        them. I am always looking for new challenges and opportunities through meeting new people and
+                        trying out new projects. In my free time, I love playing video games like Apex, Call of Duty
+                        e.t.c. I always have the enthusiasm to learn new things.
+                    </p>
+
+                    <p>
+                        My dream is to build something that it is functional and user-friendly and will make a long
+                        lasting impact on the world
+
+
+                    </p>
+                </section>
+
+
+                <!--
+          - service
+        -->
+
+                <section class="service">
+
+                    <h3 class="h3 service-title">What i'm doing</h3>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./images/icon-design.svg
+                " alt="design icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web design</h4>
+
+                                <p class="service-item-text">
+                                    The most modern and high-quality design made at a professional level.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./images/icon-dev.svg" alt="Web development icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web development</h4>
+
+                                <p class="service-item-text">
+                                    High-quality development of sites at the professional level.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./images/icon-app.svg" alt="mobile app icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                                <p class="service-item-text">
+                                    Professional development of applications for iOS and Android.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./images/icon-design.svg" alt="ux/ui icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">UI/UX Design</h4>
+
+                                <p class="service-item-text">
+                                    Design intuitive digital experiences that engage and delight users.
+                                </p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+
+
+
+            </article>
+
+
+
+
+
+
+
+            <!--
+        - #RESUME
+      -->
+
+            <article class="resume" data-page="resume">
+
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">University of Prince Edward island</h4>
+
+                            <span>2022 — 2025</span>
+
+
+
+                            <ol class="timeline-list">
+
+                                <li class="timeline-item">
+                                    <p class="timeline-text">
+                                        Current 3rd year Student enrolled
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <p class="timeline-text">
+                                        Relevant courses completed: Web Development Programming, Programming Practices,
+                                        Linear
+                                        Algebra, Data Structures and Algorithms.
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <p class="timeline-text">
+                                        Developed a fully operable website when taking the course Web Development
+                                        Programming
+
+
+                                    </p>
+                                </li>
+
+                            </ol>
+
+
+                        </li>
+
+
+                    </ol>
+
+                </section>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Software Dev Engineer Intern </h4>
+
+                            <h3 class="h3 timeline-item-title">Amazon Canada Fulfillment Services, ULC. </h3>
+
+                            <span>May 2023 — Present</span>
+
+
+                            <ol class="timeline-list">
+
+                                <li class="timeline-item">
+                                    <p class="timeline-text">
+                                        Collaborated to design and build innovative technologies in a large,
+                                        distributed computing environment, resulting in scalable and fault-tolerant
+                                        solutions.
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <p class="timeline-text">
+                                        Developed distributed storage, index, and query systems, contributing to
+                                        fundamental changes in the industry.
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <p class="timeline-text">
+                                        Delivered high-quality software in an agile environment, applying Computer
+                                        Science fundamentals.
+                                    </p>
+                                </li>
+
+                            </ol>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Teaching Assistant</h4>
+                            <h3 class="h3 timeline-item-title">University of Prince Edward Island</h3>
+
+                            <span>Jan 2023 — May 2023</span>
+
+                            <ol class="timeline-list">
+
+                                <li class="timeline-item">
+                                    <p class="timeline-text">
+                                        Assisted in passing across course content and providing feedback to questions.
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <p class="timeline-text">
+                                        Evaluated and graded student assessments, ensuring accuracy and consistency in
+                                        grading, and provided constructive feedback to improve their understanding of
+                                        course materials.
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <p class="timeline-text">
+                                        Collaborated with course instructors to develop course materials and lesson
+                                        plans, contributing to the effective delivery of the course.
+                                    </p>
+                                </li>
+
+                            </ol>
+
+                        </li>
+
+
+
+                    </ol>
+
+                </section>
+
+
+
+            </article>
+
+
+
+
+
+            <!--
+        - #PORTFOLIO
+      -->
+
+            <article class="portfolio" data-page="portfolio">
+
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+
+
+
+
+
+                    <ul class="project-list">
+
+                        <li class="project-item  active">
+                            <a href="https://github.com/Tomiwa-Adewumi">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/p2.png" alt="Hex Island" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Hex Island</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active">
+                            <a href="https://github.com/Tomiwa-Adewumi">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/p1.jpeg" alt="Image Resizer" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Image Resizer</h3>
+                                <p class="project-category">Applications</p>
+
+
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active">
+                            <a href="https://github.com/Tomiwa-Adewumi">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/p3.jpeg" alt="Toggle Game" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Toggle Game</h3>
+
+                                <p class="project-category">Web design</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active">
+                            <a href="https://github.com/Tomiwa-Adewumi">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/p4.png" alt="Art Studio" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Art Studio</h3>
+
+                                <p class="project-category">Applications</p>
+
+                            </a>
+                        </li>
+
+
+
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+
+
+
+
+
+            <!--
+        - #CONTACT
+      -->
+
+            <article class="contact" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+
+
+                <section class="contact-form">
+
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="#" class="form" data-form>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required
+                                data-form-input>
+
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required
+                                data-form-input>
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required
+                            data-form-input></textarea>
+
+                        <button class="form-btn" type="submit" data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+    <!--
+    - custom js link
+  -->
+    <script src="try.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
