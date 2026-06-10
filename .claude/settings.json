@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sS -o /dev/null -w \"html=%{http_code} \" \"http://localhost:8765/\")",
+      "Bash(curl -sS -o /dev/null -w \"css=%{http_code} \" \"http://localhost:8765/try.css\")",
+      "Bash(curl -sS -o /dev/null -w \"js=%{http_code} \" \"http://localhost:8765/try.js\")",
+      "Bash(curl -sS -o /dev/null -w \"fav=%{http_code} \" \"http://localhost:8765/images/profile2.svg\")",
+      "Bash(curl -sS -o /dev/null -w \"avatar=%{http_code} \" \"http://localhost:8765/images/my-avatar2.png\")",
+      "Bash(curl -sS http://localhost:8765/)",
+      "Bash(chromium-cli --version)",
+      "Bash(ls /Applications/ 2>/dev/null | grep -iE \"chrome|chromium|safari|firefox|brave|edge\" | head -10; echo \"---\"; which node npx 2>/dev/null)",
+      "Read(//Applications/**)",
+      "Bash(curl -sS -o /dev/null -w \"html=%{http_code} css=%{http_code}\\\\n\" \"http://localhost:8765/?v=2\")",
+      "Bash(curl -sS http://localhost:8765/try.css)",
+      "Bash(open \"http://localhost:8765/\")"
+    ]
+  }
+}
