@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const links = [
   ['Profile', 'profile'], ['Log', 'log'], ['Archive', 'archive'],
-  ['Loadout', 'loadout'], ['Lore', 'lore'], ['Likes', 'things'],
+  ['Loadout', 'loadout'], ['Films', 'film-history'],
 ];
 
 export default function Header() {

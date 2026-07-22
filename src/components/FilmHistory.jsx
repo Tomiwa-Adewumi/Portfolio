@@ -14,7 +14,7 @@ const snapshot = [
 const stars = rating => `${'★'.repeat(Math.floor(rating))}${rating % 1 ? '½' : ''}`;
 const formatDate = date => new Date(`${date}T12:00:00`).toLocaleDateString('en-CA', { month: 'short', day: 'numeric', year: 'numeric' });
 
-export default function FilmHistory({ embedded = false }) {
+export default function FilmHistory() {
   const [films, setFilms] = useState(snapshot);
 
   useEffect(() => {
@@ -26,15 +26,18 @@ export default function FilmHistory({ embedded = false }) {
 
   const content = (
     <>
-      {embedded
-        ? <header className="film-subhead reveal"><h3>RECENTLY <span>WATCHED.</span></h3></header>
-        : <SectionHeader index="07" label="CINEMA LOG" title="Letterboxd" outline="history." />}
+      <SectionHeader index="05" label="CINEMA LOG" title="Recently" outline="watched." />
       <div className="filmstrip" aria-hidden="true" />
-      <div className="films-grid">
+      <div className="films-grid" aria-label="Recently watched films">
         {films.map((film, index) => (
           <a href={film.link} target="_blank" rel="noopener noreferrer" key={`${film.title}-${film.watchedDate}`} className="film-card reveal" style={{ transitionDelay: `${index * 70}ms` }}>
-            <img src={film.poster} alt={`Poster for ${film.title}`} />
-            <div className="film-card-copy"><div className="film-card-top"><span className="film-tag">{stars(film.rating)}</span><small>{formatDate(film.watchedDate)}</small></div><h3>{film.title} <small>({film.year})</small></h3>{film.review && <p>{film.review}</p>}<u>VIEW ON LETTERBOXD ↗</u></div>
+            <img src={film.poster} alt={`Poster for ${film.title}`} loading="lazy" />
+            <span className="film-card-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <div className="film-card-copy">
+              <div className="film-card-top"><span className="film-tag" aria-label={`${film.rating} out of 5 stars`}>{stars(film.rating)}</span><small>{formatDate(film.watchedDate)}</small></div>
+              <h3>{film.title} <small>({film.year})</small></h3>
+              <div className="film-card-details">{film.review && <p>{film.review}</p>}<u>OPEN DIARY ENTRY ↗</u></div>
+            </div>
           </a>
         ))}
       </div>
@@ -43,7 +46,5 @@ export default function FilmHistory({ embedded = false }) {
     </>
   );
 
-  return embedded
-    ? <div className="film-history film-history-embedded" id="film-history">{content}</div>
-    : <section className="section film-history" id="film-history">{content}</section>;
+  return <section className="section film-history" id="film-history">{content}</section>;
 }

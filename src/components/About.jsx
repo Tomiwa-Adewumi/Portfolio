@@ -13,7 +13,7 @@ export default function About() {
         <div className="bio reveal">
           <p className="lead">I care about the invisible details: failure modes, clean handoffs, fast paths, and interfaces that make complex systems feel obvious.</p>
           <p>At SS&amp;C Technologies, I build reliable payment infrastructure and enterprise data workflows using Java, React, Kubernetes, and Apache NiFi. I also volunteer as a teacher with Black Boys Code, where I teach young people computer science, math, and chess, helping them build confidence and practical skills.</p>
-          <p>Outside the terminal, you’ll find me dropping into Apex and wandering the Lands Between.</p>
+          <p>Outside the terminal, you’ll find me wandering the Lands Between or catching up on films.</p>
           <ul><li>BACKEND</li><li>CLOUD</li><li>FULL-STACK</li><li>CINEMATIC UI</li></ul>
         </div>
       </div>

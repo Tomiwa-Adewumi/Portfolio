@@ -6,8 +6,7 @@ import About from './components/About';
 import Work from './components/Work';
 import Projects from './components/Projects';
 import Loadout from './components/Loadout';
-import Lore from './components/Lore';
-import ThingsILike from './components/ThingsILike';
+import FilmHistory from './components/FilmHistory';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -57,8 +56,7 @@ export default function App() {
         <Work />
         <Projects />
         <Loadout />
-        <Lore />
-        <ThingsILike />
+        <FilmHistory />
       </main>
       <Footer />
     </>
