@@ -286,6 +286,15 @@ footer h2 {
 .contexts {
   background: #222824;
 }
+.careroute {
+  background:
+    radial-gradient(circle at 80% 18%, rgba(192, 206, 148, 0.14), transparent 28%),
+    #162b25;
+}
+.careroute .project-diagram > div {
+  background: #1d372f;
+  border-color: #668777;
+}
 .contexts .project-diagram > div {
   background: #2c342e;
   border-color: #61746a;
@@ -349,6 +358,31 @@ footer h2 {
   width: fit-content;
   border-bottom: 1px solid #687454;
   padding-bottom: 4px;
+}
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+.project-links .text-link {
+  margin-top: 0;
+}
+.project-demo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+.project-demo-link:hover {
+  background: var(--ink);
+  border-color: var(--ink);
 }
 .text-link:hover {
   color: var(--ink);

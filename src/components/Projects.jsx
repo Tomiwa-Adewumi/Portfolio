@@ -2,6 +2,21 @@ import SectionHeader from "./SectionHeader";
 const projects = [
   {
     id: "01",
+    title: "CareRoute",
+    category: "Explainable ML decision support",
+    description:
+      "Ranks Toronto emergency departments by the estimated total time to care.",
+    detail:
+      "A per-hospital linear-regression model forecasts wait time at arrival, then combines it with location-based travel time and data freshness in an auditable score.",
+    tags: ["Java", "Spring Boot", "Next.js", "PostgreSQL", "ML"],
+    href: "https://github.com/Tomiwa-Adewumi/CareRoute",
+    demoHref: "https://careroute-uejn.onrender.com/",
+    kind: "careroute",
+    steps: ["Live ER data", "OLS forecast", "Explainable rank"],
+    note: "Live Toronto prototype",
+  },
+  {
+    id: "02",
     title: "Prommmt",
     category: "AI art discovery",
     description:
@@ -15,7 +30,7 @@ const projects = [
     note: "100+ users",
   },
   {
-    id: "02",
+    id: "03",
     title: "Local Contexts",
     category: "Cultural data integration",
     description: "Connects Traditional Knowledge Labels to Drupal content.",
@@ -28,7 +43,7 @@ const projects = [
     note: "Integration overview",
   },
   {
-    id: "03",
+    id: "04",
     title: "Image Resizer",
     category: "Image processing",
     description: "A focused utility for batch image resizing.",
@@ -97,15 +112,28 @@ export default function Projects() {
                   <span key={tag}>{tag}</span>
                 ))}
               </div>
-              <a
-                className="text-link"
-                href={project.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`View ${project.title} code on GitHub`}
-              >
-                View code on GitHub <span aria-hidden="true">↗</span>
-              </a>
+              <div className="project-links">
+                {project.demoHref && (
+                  <a
+                    className="project-demo-link"
+                    href={project.demoHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Open the live ${project.title} application`}
+                  >
+                    Open live project <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+                <a
+                  className="text-link"
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${project.title} code on GitHub`}
+                >
+                  View code on GitHub <span aria-hidden="true">↗</span>
+                </a>
+              </div>
             </div>
           </article>
         ))}
