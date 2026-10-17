@@ -7,8 +7,8 @@ const projects = [
     description:
       "Ranks Toronto emergency departments by the estimated total time to care.",
     detail:
-      "A per-hospital linear-regression model forecasts wait time at arrival, then combines it with location-based travel time and data freshness in an auditable score.",
-    tags: ["Java", "Spring Boot", "Next.js", "PostgreSQL", "ML"],
+      "A production ML baseline with rolling-origin backtesting, baseline comparisons, prediction intervals, safe fallbacks, and an auditable location-aware ranking.",
+    tags: ["Java", "Spring Boot", "Next.js", "PostgreSQL", "ML Evaluation"],
     href: "https://github.com/Tomiwa-Adewumi/CareRoute",
     demoHref: "https://careroute-uejn.onrender.com/",
     kind: "careroute",
